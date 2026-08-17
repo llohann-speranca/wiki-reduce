@@ -1,0 +1,24 @@
+filters:
+  and:
+    - file.inFolder("wiki/sources")
+    - 'file.ext == "md"'
+
+properties:
+  title:
+    displayName: Title
+  contributor:
+    displayName: Contributor
+  date:
+    displayName: Date
+  origin:
+    displayName: Origin
+
+views:
+  - type: table
+    name: "Sources"
+    order:
+      - file.name
+      - title
+      - contributor
+      - date
+      - origin

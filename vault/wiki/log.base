@@ -1,0 +1,24 @@
+filters:
+  and:
+    - file.inFolder("wiki/log")
+    - 'file.ext == "md"'
+
+properties:
+  op:
+    displayName: Operation
+  contributor:
+    displayName: Contributor
+  source_id:
+    displayName: Source
+  date:
+    displayName: Date
+
+views:
+  - type: table
+    name: "Log"
+    order:
+      - date
+      - op
+      - source_id
+      - contributor
+      - file.name

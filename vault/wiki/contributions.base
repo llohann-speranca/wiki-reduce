@@ -1,0 +1,30 @@
+filters:
+  and:
+    - file.inFolder("wiki/contributions")
+    - 'file.ext == "md"'
+
+properties:
+  hub:
+    displayName: Hub
+  source_id:
+    displayName: Source
+  contributor:
+    displayName: Contributor
+  kind:
+    displayName: Kind
+  date:
+    displayName: Date
+
+views:
+  - type: table
+    name: "Contributions"
+    order:
+      - file.name
+      - hub
+      - source_id
+      - contributor
+      - kind
+      - date
+    groupBy:
+      property: hub
+      direction: ASC
