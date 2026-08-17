@@ -1,4 +1,4 @@
-# integrated-brain
+# wiki-reduce
 
 Agent skills for a **collaborative LLM wiki**: ingest from many users without git conflicts, query via Obsidian Bases and backlinks, lint, then serially compile hub prose.
 
@@ -20,10 +20,8 @@ Install [kepano/obsidian-skills](https://github.com/kepano/obsidian-skills) alon
 
 ```
 npx skills add git@github.com:kepano/obsidian-skills.git
-npx skills add /Users/llohann/repos/integrated-brain
+npx skills add git@github.com:llohann-speranca/wiki-reduce.git
 ```
-
-Use the git URL for this repo once it has a remote.
 
 ### Manually
 
@@ -32,10 +30,10 @@ Use the git URL for this repo once it has a remote.
 This repo already exposes skills under `.cursor/skills/` (symlinks into `skills/`). Open the repo as the workspace, or symlink:
 
 ```sh
-ln -s /Users/llohann/repos/integrated-brain/skills/wiki-ingest ~/.cursor/skills/wiki-ingest
-ln -s /Users/llohann/repos/integrated-brain/skills/wiki-query ~/.cursor/skills/wiki-query
-ln -s /Users/llohann/repos/integrated-brain/skills/wiki-lint ~/.cursor/skills/wiki-lint
-ln -s /Users/llohann/repos/integrated-brain/skills/wiki-compile ~/.cursor/skills/wiki-compile
+ln -s /path/to/wiki-reduce/skills/wiki-ingest ~/.cursor/skills/wiki-ingest
+ln -s /path/to/wiki-reduce/skills/wiki-query ~/.cursor/skills/wiki-query
+ln -s /path/to/wiki-reduce/skills/wiki-lint ~/.cursor/skills/wiki-lint
+ln -s /path/to/wiki-reduce/skills/wiki-compile ~/.cursor/skills/wiki-compile
 ```
 
 #### Claude Code
@@ -48,7 +46,7 @@ Copy `skills/` into `~/.codex/skills`.
 
 #### OpenCode
 
-Clone this repo under `~/.opencode/skills/` so paths look like `~/.opencode/skills/integrated-brain/skills/<name>/SKILL.md`.
+Clone this repo under `~/.opencode/skills/` so paths look like `~/.opencode/skills/wiki-reduce/skills/<name>/SKILL.md`.
 
 ## Skills
 
