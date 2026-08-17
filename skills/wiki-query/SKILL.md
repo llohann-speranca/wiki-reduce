@@ -20,6 +20,7 @@ Directory containing `wiki/` and `raw/`. If the git root has `vault/wiki/`, use 
 5. **Union search.** If Bases miss a buried fact, `rg` (or qmd) over `wiki/` and **union** those hits with the Base set. Do not replace the Base set.
 6. **Cite** wiki paths and `source_id`s. Distinguish compiled hub prose from create-only contributions.
 7. **File back** if the answer should compound: write a **new** unique page (contribution, log with `op: query`, or a domain decision page the vault defines). Never edit the hub. Offer compile if the user wants hub prose updated.
+8. **Federated wikis.** If sibling git repos each have `wiki/hot.json` or `wiki/log/*.json`, follow [FEDERATE.md](references/FEDERATE.md): read in place, do not copy files, write only in the repo where the work happened.
 
 Answers that die in chat do not compound.
 
@@ -38,7 +39,7 @@ wiki/contributions/{hub}/{YYYY-MM-DD}-query-{slug}.md
 wiki/log/{YYYY-MM-DD}-query-{slug}.md
 ```
 
-Set `op: query` on the log file. Set `contributor` to the asking user.
+Set `op: query` on the log file. Set `contributor` to the asking user. In a federated wiki, prefer `wiki/log/{YYYY-MM-DD}-query-{slug}.json` ([JSON-RECORDS.md](../wiki-ingest/references/JSON-RECORDS.md)).
 
 ## Validation checklist
 

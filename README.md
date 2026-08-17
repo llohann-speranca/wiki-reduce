@@ -53,7 +53,7 @@ Clone this repo under `~/.opencode/skills/` so paths look like `~/.opencode/skil
 | Skill | Description |
 |-------|-------------|
 | [wiki-ingest](skills/wiki-ingest) | Create-only ingest: source note, per-hub contributions, log file, alias stubs |
-| [wiki-query](skills/wiki-query) | Answer from Bases and backlinks; file reusable answers as new pages |
+| [wiki-query](skills/wiki-query) | Answer from Bases and backlinks; federated glob of sibling `wiki/hot.json` + `wiki/log/*.json` |
 | [wiki-lint](skills/wiki-lint) | Alias collisions, compile gaps, orphans, pin health |
 | [wiki-compile](skills/wiki-compile) | Serial reduce into `wiki/hubs/` plus optional canvases |
 

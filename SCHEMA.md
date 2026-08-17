@@ -118,3 +118,7 @@ Thinner relatives: [MetamusicX/llm-research-wiki](https://github.com/MetamusicX/
 ## Note
 
 Directory names, domain page types, and extra output formats are yours. The invariant is the ingest rule: **unique new paths only**. Compile is the only writer of shared derived pages. Bases are the index.
+
+## Federation (optional)
+
+When several git repos share one knowledge graph, do **not** copy log/hot files between them. Each repo owns `wiki/log/{id}.json` (create-only) and `wiki/hot.json` (local overwrite). Query glob-reads sibling `wiki/` trees. See [FEDERATE.md](skills/wiki-query/references/FEDERATE.md) and [JSON-RECORDS.md](skills/wiki-ingest/references/JSON-RECORDS.md).

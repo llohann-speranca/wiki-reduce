@@ -21,7 +21,7 @@ isProject: false
 
 ## What this repo is
 
-[`/Users/llohann/repos/integrated-brain`](/Users/llohann/repos/integrated-brain) is the repo root (not a nested `Untitled/` folder). It will become a **reusable Obsidian + Agent Skills pack** (Karpathy’s idea file + kepano’s skill shape), not a Leonardo-specific wiki.
+[`/Users/llohann/repos/wiki-reduce`](/Users/llohann/repos/wiki-reduce) is the repo root (not a nested `Untitled/` folder). It will become a **reusable Obsidian + Agent Skills pack** (Karpathy’s idea file + kepano’s skill shape), not a Leonardo-specific wiki.
 
 `[~/leonardo/codebase/leonardo-internal](/Users/llohann/leonardo/codebase/leonardo-internal)` is the **later test case**. It already instantiates the original gist: every ingest patches hubs, `[wiki/index.md](/Users/llohann/leonardo/codebase/leonardo-internal/wiki/index.md)`, `[wiki/log.md](/Users/llohann/leonardo/codebase/leonardo-internal/wiki/log.md)`, `[wiki/hot.md](/Users/llohann/leonardo/codebase/leonardo-internal/wiki/hot.md)`, and `[wiki/skills-map.md](/Users/llohann/leonardo/codebase/leonardo-internal/wiki/skills-map.md)`. Those shared files are the conflict surface.
 

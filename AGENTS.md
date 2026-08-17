@@ -32,4 +32,4 @@ Depend on [kepano/obsidian-skills](https://github.com/kepano/obsidian-skills) fo
 
 Ontology (projects, papers, labs, `agent_ready`, …) belongs in the consuming vault's `AGENTS.md`. Do not encode a domain here.
 
-The intended first conversion is `~/leonardo/codebase/leonardo-internal` (Karpathy-style shared `index.md` / `log.md` / hub patches). Do not migrate it until this pack is the source of ingest/query/lint/compile behavior.
+Leonardo Centre uses this pack as a **federated** wiki: `leonardo-internal` is routing + wiki-day + soul; each `leonardo-*` repo holds domain next-actions and JSON log/hot. Query reads in place (`FEDERATE.md`).

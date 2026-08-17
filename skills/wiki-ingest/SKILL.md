@@ -21,7 +21,7 @@ The vault root is the directory that contains `wiki/` and `raw/`. If the git roo
 4. **Write the source note** `wiki/sources/{source-id}.md`.
 5. **Write one contribution per hub** `wiki/contributions/{hub-id}/{source-id}.md`. Wikilink `[[hub-id]]` even if `wiki/hubs/{hub-id}.md` does not exist.
 6. **Reserve aliases** only for stems you introduced, as new files under `wiki/aliases/`.
-7. **Write a log file** `wiki/log/{YYYY-MM-DD}-{source-id}.md` with `op: ingest`.
+7. **Write a log file** `wiki/log/{YYYY-MM-DD}-{source-id}.md` with `op: ingest`. If this vault federates across git repos, write `wiki/log/{YYYY-MM-DD}-{source-id}.json` instead ([JSON-RECORDS.md](references/JSON-RECORDS.md)) and update this repo’s `wiki/hot.json` only.
 8. **Validate** (checklist below). Stop. Do not run compile unless the user asked.
 
 A single source may produce many contribution files. That is expected. Prefer many small create-only notes over patching a hub.
